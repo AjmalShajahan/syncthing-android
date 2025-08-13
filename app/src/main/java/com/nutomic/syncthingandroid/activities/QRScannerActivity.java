@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.Manifest;
 import android.app.Activity;
@@ -13,8 +13,8 @@ import androidx.core.content.ContextCompat;
 import com.google.zxing.ResultPoint;
 import com.journeyapps.barcodescanner.BarcodeCallback;
 import com.journeyapps.barcodescanner.BarcodeResult;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.databinding.ActivityQrScannerBinding;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.databinding.ActivityQrScannerBinding;
 
 import java.util.List;
 

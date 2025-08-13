@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -26,16 +26,16 @@ import android.widget.Toast;
 
 import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.gson.Gson;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.databinding.FragmentFolderBinding;
-import com.nutomic.syncthingandroid.model.Device;
-import com.nutomic.syncthingandroid.model.Folder;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.util.FileUtils;
-import com.nutomic.syncthingandroid.util.TextWatcherAdapter;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.databinding.FragmentFolderBinding;
+import com.ajmalshajahan.syncthingandroid.model.Device;
+import com.ajmalshajahan.syncthingandroid.model.Folder;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.util.FileUtils;
+import com.ajmalshajahan.syncthingandroid.util.TextWatcherAdapter;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 import java.io.File;
 import java.io.IOException;
@@ -49,7 +49,7 @@ import static androidx.core.view.MarginLayoutParamsCompat.setMarginStart;
 import static android.util.TypedValue.COMPLEX_UNIT_DIP;
 import static android.view.Gravity.CENTER_VERTICAL;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-import static com.nutomic.syncthingandroid.service.SyncthingService.State.ACTIVE;
+import static com.ajmalshajahan.syncthingandroid.service.SyncthingService.State.ACTIVE;
 
 /**
  * Shows folder details and allows changing them.
@@ -58,15 +58,15 @@ public class FolderActivity extends SyncthingActivity
         implements SyncthingActivity.OnServiceConnectedListener, SyncthingService.OnServiceStateChangeListener {
 
     public static final String EXTRA_NOTIFICATION_ID =
-            "com.nutomic.syncthingandroid.activities.FolderActivity.NOTIFICATION_ID";
+            "com.ajmalshajahan.syncthingandroid.activities.FolderActivity.NOTIFICATION_ID";
     public static final String EXTRA_IS_CREATE =
-            "com.nutomic.syncthingandroid.activities.FolderActivity.IS_CREATE";
+            "com.ajmalshajahan.syncthingandroid.activities.FolderActivity.IS_CREATE";
     public static final String EXTRA_FOLDER_ID =
-            "com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_ID";
+            "com.ajmalshajahan.syncthingandroid.activities.FolderActivity.FOLDER_ID";
     public static final String EXTRA_FOLDER_LABEL =
-            "com.nutomic.syncthingandroid.activities.FolderActivity.FOLDER_LABEL";
+            "com.ajmalshajahan.syncthingandroid.activities.FolderActivity.FOLDER_LABEL";
     public static final String EXTRA_DEVICE_ID =
-            "com.nutomic.syncthingandroid.activities.FolderActivity.DEVICE_ID";
+            "com.ajmalshajahan.syncthingandroid.activities.FolderActivity.DEVICE_ID";
 
     private static final String TAG = "FolderActivity";
 
@@ -545,7 +545,7 @@ public class FolderActivity extends SyncthingActivity
                 /**
                  * Suggest folder type FOLDER_TYPE_SEND_RECEIVE for folders to be created
                  * because the user most probably intentionally chose a special folder like
-                 * "[storage]/Android/data/com.nutomic.syncthingandroid/files"
+                 * "[storage]/Android/data/com.ajmalshajahan.syncthingandroid/files"
                  * or enabled root mode thus having write access.
                  */
                 mFolder.type = Constants.FOLDER_TYPE_SEND_RECEIVE;

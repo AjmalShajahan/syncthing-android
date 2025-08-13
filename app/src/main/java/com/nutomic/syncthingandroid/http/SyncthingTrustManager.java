@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.http;
+package com.ajmalshajahan.syncthingandroid.http;
 
 import android.annotation.SuppressLint;
 import android.util.Log;

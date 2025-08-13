@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.model;
+package com.ajmalshajahan.syncthingandroid.model;
 
 import android.util.Log;
 

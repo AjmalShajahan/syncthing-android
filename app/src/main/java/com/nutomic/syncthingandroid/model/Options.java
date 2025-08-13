@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.model;
+package com.ajmalshajahan.syncthingandroid.model;
 
 public class Options {
     public String[] listenAddresses;

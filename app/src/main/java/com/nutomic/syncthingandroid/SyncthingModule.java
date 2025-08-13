@@ -1,9 +1,9 @@
-package com.nutomic.syncthingandroid;
+package com.ajmalshajahan.syncthingandroid;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.nutomic.syncthingandroid.service.NotificationHandler;
+import com.ajmalshajahan.syncthingandroid.service.NotificationHandler;
 
 import javax.inject.Singleton;
 

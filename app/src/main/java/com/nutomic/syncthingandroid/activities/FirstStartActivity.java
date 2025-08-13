@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -34,12 +34,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.color.MaterialColors;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.SyncthingApp;
-import com.nutomic.syncthingandroid.databinding.ActivityFirstStartBinding;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.util.PermissionUtil;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.SyncthingApp;
+import com.ajmalshajahan.syncthingandroid.databinding.ActivityFirstStartBinding;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.util.PermissionUtil;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 import java.io.File;
 

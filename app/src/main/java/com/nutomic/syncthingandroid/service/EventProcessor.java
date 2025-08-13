@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.service;
+package com.ajmalshajahan.syncthingandroid.service;
 
 import android.app.PendingIntent;
 import android.content.ContentResolver;
@@ -16,15 +16,15 @@ import android.util.Log;
 import androidx.core.util.Consumer;
 
 import com.annimon.stream.Stream;
-import com.nutomic.syncthingandroid.BuildConfig;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.SyncthingApp;
-import com.nutomic.syncthingandroid.activities.DeviceActivity;
-import com.nutomic.syncthingandroid.activities.FolderActivity;
-import com.nutomic.syncthingandroid.model.CompletionInfo;
-import com.nutomic.syncthingandroid.model.Device;
-import com.nutomic.syncthingandroid.model.Event;
-import com.nutomic.syncthingandroid.model.Folder;
+import com.ajmalshajahan.syncthingandroid.BuildConfig;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.SyncthingApp;
+import com.ajmalshajahan.syncthingandroid.activities.DeviceActivity;
+import com.ajmalshajahan.syncthingandroid.activities.FolderActivity;
+import com.ajmalshajahan.syncthingandroid.model.CompletionInfo;
+import com.ajmalshajahan.syncthingandroid.model.Device;
+import com.ajmalshajahan.syncthingandroid.model.Event;
+import com.ajmalshajahan.syncthingandroid.model.Folder;
 
 import java.io.File;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.fragments;
+package com.ajmalshajahan.syncthingandroid.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +10,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.activities.DeviceActivity;
-import com.nutomic.syncthingandroid.activities.SyncthingActivity;
-import com.nutomic.syncthingandroid.model.Device;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.views.DevicesAdapter;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.activities.DeviceActivity;
+import com.ajmalshajahan.syncthingandroid.activities.SyncthingActivity;
+import com.ajmalshajahan.syncthingandroid.model.Device;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.views.DevicesAdapter;
 
 import java.util.Collections;
 import java.util.Comparator;

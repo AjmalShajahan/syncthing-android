@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.fragments.dialog;
+package com.ajmalshajahan.syncthingandroid.fragments.dialog;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.nutomic.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.R;
 
 /**
  * Contains the configuration options for external file versioning.

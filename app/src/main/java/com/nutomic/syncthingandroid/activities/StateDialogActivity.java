@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.content.Intent;
 import androidx.databinding.DataBindingUtil;
@@ -10,17 +10,17 @@ import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.databinding.DialogLoadingBinding;
-import com.nutomic.syncthingandroid.model.RunConditionCheckResult;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.service.SyncthingService.State;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.databinding.DialogLoadingBinding;
+import com.ajmalshajahan.syncthingandroid.model.RunConditionCheckResult;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService.State;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
-import static com.nutomic.syncthingandroid.model.RunConditionCheckResult.*;
+import static com.ajmalshajahan.syncthingandroid.model.RunConditionCheckResult.*;
 
 /**
  * Handles loading/disabled dialogs.

@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.service;
+package com.ajmalshajahan.syncthingandroid.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

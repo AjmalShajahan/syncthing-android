@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.model;
+package com.ajmalshajahan.syncthingandroid.model;
 
 /**
  * According to syncthing REST API

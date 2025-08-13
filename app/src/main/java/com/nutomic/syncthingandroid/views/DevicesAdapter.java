@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.views;
+package com.ajmalshajahan.syncthingandroid.views;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,11 +13,11 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.google.android.material.color.MaterialColors;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.model.Connections;
-import com.nutomic.syncthingandroid.model.Device;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.model.Connections;
+import com.ajmalshajahan.syncthingandroid.model.Device;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 /**
  * Generates item views for device items.

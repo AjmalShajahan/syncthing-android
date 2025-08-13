@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.service;
+package com.ajmalshajahan.syncthingandroid.service;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -13,13 +13,13 @@ import androidx.annotation.StringRes;
 import androidx.core.app.NotificationCompat;
 import android.util.Log;
 
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.SyncthingApp;
-import com.nutomic.syncthingandroid.activities.FirstStartActivity;
-import com.nutomic.syncthingandroid.activities.LogActivity;
-import com.nutomic.syncthingandroid.activities.MainActivity;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.SyncthingService.State;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.SyncthingApp;
+import com.ajmalshajahan.syncthingandroid.activities.FirstStartActivity;
+import com.ajmalshajahan.syncthingandroid.activities.LogActivity;
+import com.ajmalshajahan.syncthingandroid.activities.MainActivity;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService.State;
 
 import javax.inject.Inject;
 
