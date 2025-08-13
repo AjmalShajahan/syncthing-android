@@ -52,7 +52,7 @@ $OLD_VERSION_NAME = Select-String 'versionName' "app/build.gradle.kts" | ForEach
 (Get-Content "app/build.gradle.kts") -replace "$OLD_VERSION_NAME", "`"$NEW_VERSION_NAME`"" | Set-Content "app/build.gradle.kts"
 
 git add "app/build.gradle.kts" $CHANGELOG
-git commit -m "Bumped version to $NEW_VERSION_NAME"
+git commit -m "chore: bump version to $NEW_VERSION_NAME"
 
 $changelogContent = Get-Content $CHANGELOG | Out-String
 git tag -a $NEW_VERSION_NAME -m "$NEW_VERSION_NAME`n`n$changelogContent"
