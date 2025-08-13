@@ -4,7 +4,7 @@ buildscript {
     extra.apply {
         // Cannot be called "ndkVersion" as that leads to naming collision
         // Changes to this value must be reflected in `./docker/Dockerfile`
-        set("ndkVersionShared", "25.2.9519653")
+        set("ndkVersionShared", "28.2.13676358")
 
     }
 
@@ -14,7 +14,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.3.1")
+        classpath("com.android.tools.build:gradle:8.12.0")
         classpath("com.github.ben-manes:gradle-versions-plugin:0.36.0")
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -23,5 +23,5 @@ buildscript {
 }
 
 tasks.register<Delete>("clean") {
-    delete(rootProject.buildDir)
+    delete(layout.buildDirectory.get())
 }

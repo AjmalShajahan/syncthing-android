@@ -82,23 +82,17 @@ public class SyncthingRunnable implements Runnable {
         // Get preferences relevant to starting syncthing core.
         mUseRoot = mPreferences.getBoolean(Constants.PREF_USE_ROOT, false) && Shell.SU.available();
         switch (command) {
-            case deviceid:
-                mCommand = new String[]{ mSyncthingBinary.getPath(), "-home", mContext.getFilesDir().toString(), "--device-id" };
-                break;
-            case generate:
-                mCommand = new String[]{ mSyncthingBinary.getPath(), "-generate", mContext.getFilesDir().toString(), "-logflags=0" };
-                break;
-            case main:
-                mCommand = new String[]{ mSyncthingBinary.getPath(), "-home", mContext.getFilesDir().toString(), "-no-browser", "-logflags=0" };
-                break;
-            case resetdatabase:
-                mCommand = new String[]{ mSyncthingBinary.getPath(), "-home", mContext.getFilesDir().toString(), "-reset-database", "-logflags=0" };
-                break;
-            case resetdeltas:
-                mCommand = new String[]{ mSyncthingBinary.getPath(), "-home", mContext.getFilesDir().toString(), "-reset-deltas", "-logflags=0" };
-                break;
-            default:
-                throw new InvalidParameterException("Unknown command option");
+            case deviceid ->
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "--home", mContext.getFilesDir().toString(), "--device-id"};
+            case generate ->
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "generate", "--home", mContext.getFilesDir().toString()};
+            case main ->
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "--home", mContext.getFilesDir().toString(), "--no-browser", "--log-level=ERROR"};
+            case resetdatabase ->
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "debug", "--home", mContext.getFilesDir().toString(), "reset-database"};
+            case resetdeltas ->
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "--home", mContext.getFilesDir().toString(), "--debug-reset-delta-idxs", "--log-level=ERROR"};
+            default -> throw new InvalidParameterException("Unknown command option");
         }
     }
 
