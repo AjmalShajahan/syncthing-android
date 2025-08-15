@@ -82,7 +82,7 @@ android {
 
     // Otherwise libsyncthing.so doesn't appear where it should in installs
     // based on app bundles, and thus nothing works.
-    packagingOptions {
+    packaging {
         jniLibs {
             useLegacyPackaging = true
         }

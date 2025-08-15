@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk-jammy@sha256:e89e27f0f1436d3458fa2a8d636140dd94c10e23c92cadd9e25244c2b960d3c7
 
-ENV GO_VERSION 1.24.6
+ENV GO_VERSION=1.24.6
 
 # Can be found scrolling down on this page:
 # https://developer.android.com/studio/index.html#command-tools
@@ -16,15 +16,15 @@ RUN apt-get update && apt-get install --reinstall --no-install-recommends -y bui
 RUN wget -nv https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz && \
     tar -zxf go${GO_VERSION}.linux-amd64.tar.gz && \
     rm go${GO_VERSION}.linux-amd64.tar.gz
-ENV GOROOT /opt/go
-ENV PATH /opt/go/bin:${PATH}
+ENV GOROOT=/opt/go
+ENV PATH=/opt/go/bin:${PATH}
 
 # Install Android SDK manager
 RUN mkdir -p /opt/android-sdk && cd /opt/android-sdk && \
     wget -q https://dl.google.com/android/repository/${ANDROID_SDK_FILENAME} && \
     unzip -q ${ANDROID_SDK_FILENAME} && \
     rm ${ANDROID_SDK_FILENAME}
-ENV ANDROID_HOME /opt/android-sdk
+ENV ANDROID_HOME=/opt/android-sdk
 
 ARG SDKMANAGER="${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME}"
 
@@ -32,7 +32,7 @@ ARG SDKMANAGER="${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROI
 RUN yes | $SDKMANAGER --licenses > /dev/null
 
 # NDK version
-ENV NDK_VERSION 28.2.13676358
+ENV NDK_VERSION=28.2.13676358
 
 # Install other android packages, including NDK
 RUN $SDKMANAGER tools platform-tools "build-tools;36.0.0" "platforms;android-36" "extras;android;m2repository" "ndk;${NDK_VERSION}"
@@ -41,13 +41,13 @@ RUN $SDKMANAGER tools platform-tools "build-tools;36.0.0" "platforms;android-36"
 RUN yes | $SDKMANAGER --licenses
 
 # Enable prebuild mode
-ENV SYNCTHING_ANDROID_PREBUILT 1
+ENV SYNCTHING_ANDROID_PREBUILT=1
 
 # Set location of go cache
-ENV GOCACHE /opt/gocache
+ENV GOCACHE=/opt/gocache
 
 # Set location of GOPATH to persist packages for module builds in GOPATH/pkg/mod
-ENV GOPATH /opt/gopath
+ENV GOPATH=/opt/gopath
 
 # Run prebuild script (will prebuild stuff into the image if env var is set)
 ADD . /opt/syncthing-android
