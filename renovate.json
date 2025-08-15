@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "group:allNonMajor",
+    ":automergeStableNonMajor",
+    ":automergeBranch",
+    ":automergeRequireAllStatusChecks",
+    ":prImmediately",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":separateMultipleMajorReleases",
+    ":approveMajorUpdates",
+    ":preserveSemverRanges"
+  ],
+  "rollbackPrs": true,
+  "assigneesFromCodeOwners": true,
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": false,
+  "dependencyDashboardLabels": ["dependencies"],
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  },
+  "osvVulnerabilityAlerts": true
+}
