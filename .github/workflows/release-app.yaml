@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/ajmalshajahan/syncthing-android-builder
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
         with:
           submodules: true
           fetch-depth: 0
@@ -54,7 +54,7 @@ jobs:
           cd app/build/outputs/apk/release
           sha256sum app-release.apk | gpg --clearsign > sha256sum.txt.asc
 
-      - uses: ncipollo/release-action@v1
+      - uses: ncipollo/release-action@bcfe5470707e8832e12347755757cec0eb3c22af # v1
         with:
           artifacts: "app/build/outputs/apk/release/*.apk,app/build/outputs/apk/release/*.asc"
           artifactErrorsFailBuild: true
