@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.views;
+package com.ajmalshajahan.syncthingandroid.views;
 
 import android.content.Context;
 import androidx.appcompat.widget.AppCompatEditText;

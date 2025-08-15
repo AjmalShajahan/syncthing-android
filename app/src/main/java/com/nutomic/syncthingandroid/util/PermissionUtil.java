@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.util;
+package com.ajmalshajahan.syncthingandroid.util;
 
 import android.Manifest;
 import android.content.Context;

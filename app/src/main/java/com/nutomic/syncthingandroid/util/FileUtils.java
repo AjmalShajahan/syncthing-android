@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.util;
+package com.ajmalshajahan.syncthingandroid.util;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;

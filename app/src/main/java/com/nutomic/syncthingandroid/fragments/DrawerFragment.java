@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.fragments;
+package com.ajmalshajahan.syncthingandroid.fragments;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,18 +16,18 @@ import android.widget.Toast;
 
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableMap;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.activities.MainActivity;
-import com.nutomic.syncthingandroid.activities.SettingsActivity;
-import com.nutomic.syncthingandroid.activities.WebGuiActivity;
-import com.nutomic.syncthingandroid.http.ImageGetRequest;
-import com.nutomic.syncthingandroid.model.Connections;
-import com.nutomic.syncthingandroid.model.SystemInfo;
-import com.nutomic.syncthingandroid.model.SystemVersion;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.activities.MainActivity;
+import com.ajmalshajahan.syncthingandroid.activities.SettingsActivity;
+import com.ajmalshajahan.syncthingandroid.activities.WebGuiActivity;
+import com.ajmalshajahan.syncthingandroid.http.ImageGetRequest;
+import com.ajmalshajahan.syncthingandroid.model.Connections;
+import com.ajmalshajahan.syncthingandroid.model.SystemInfo;
+import com.ajmalshajahan.syncthingandroid.model.SystemVersion;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 import java.net.URL;
 import java.text.NumberFormat;

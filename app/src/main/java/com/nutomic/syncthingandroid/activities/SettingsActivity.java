@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,18 +24,18 @@ import android.widget.Toast;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Iterables;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.SyncthingApp;
-import com.nutomic.syncthingandroid.model.Config;
-import com.nutomic.syncthingandroid.model.Device;
-import com.nutomic.syncthingandroid.model.Options;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.NotificationHandler;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.util.Languages;
-import com.nutomic.syncthingandroid.util.Util;
-import com.nutomic.syncthingandroid.views.WifiSsidPreference;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.SyncthingApp;
+import com.ajmalshajahan.syncthingandroid.model.Config;
+import com.ajmalshajahan.syncthingandroid.model.Device;
+import com.ajmalshajahan.syncthingandroid.model.Options;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.NotificationHandler;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.util.Languages;
+import com.ajmalshajahan.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.views.WifiSsidPreference;
 
 import java.lang.ref.WeakReference;
 import java.security.InvalidParameterException;
@@ -49,7 +49,7 @@ import eu.chainfire.libsuperuser.Shell;
 public class SettingsActivity extends SyncthingActivity {
 
     public static final String EXTRA_OPEN_SUB_PREF_SCREEN =
-            "com.nutomic.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN";
+            "com.ajmalshajahan.syncthingandroid.activities.SettingsActivity.OPEN_SUB_PREF_SCREEN";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

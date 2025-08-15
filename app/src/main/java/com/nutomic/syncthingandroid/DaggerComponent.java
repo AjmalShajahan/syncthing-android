@@ -1,19 +1,19 @@
-package com.nutomic.syncthingandroid;
+package com.ajmalshajahan.syncthingandroid;
 
-import com.nutomic.syncthingandroid.activities.FirstStartActivity;
-import com.nutomic.syncthingandroid.activities.FolderPickerActivity;
-import com.nutomic.syncthingandroid.activities.MainActivity;
-import com.nutomic.syncthingandroid.activities.SettingsActivity;
-import com.nutomic.syncthingandroid.activities.ShareActivity;
-import com.nutomic.syncthingandroid.activities.ThemedAppCompatActivity;
-import com.nutomic.syncthingandroid.receiver.AppConfigReceiver;
-import com.nutomic.syncthingandroid.service.RunConditionMonitor;
-import com.nutomic.syncthingandroid.service.EventProcessor;
-import com.nutomic.syncthingandroid.service.NotificationHandler;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingRunnable;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.util.Languages;
+import com.ajmalshajahan.syncthingandroid.activities.FirstStartActivity;
+import com.ajmalshajahan.syncthingandroid.activities.FolderPickerActivity;
+import com.ajmalshajahan.syncthingandroid.activities.MainActivity;
+import com.ajmalshajahan.syncthingandroid.activities.SettingsActivity;
+import com.ajmalshajahan.syncthingandroid.activities.ShareActivity;
+import com.ajmalshajahan.syncthingandroid.activities.ThemedAppCompatActivity;
+import com.ajmalshajahan.syncthingandroid.receiver.AppConfigReceiver;
+import com.ajmalshajahan.syncthingandroid.service.RunConditionMonitor;
+import com.ajmalshajahan.syncthingandroid.service.EventProcessor;
+import com.ajmalshajahan.syncthingandroid.service.NotificationHandler;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingRunnable;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.util.Languages;
 
 import javax.inject.Singleton;
 

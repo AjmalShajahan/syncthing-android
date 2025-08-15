@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -9,10 +9,10 @@ import android.os.IBinder;
 import androidx.appcompat.widget.Toolbar;
 
 import com.annimon.stream.Stream;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.service.SyncthingServiceBinder;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingServiceBinder;
 
 import java.util.LinkedList;
 

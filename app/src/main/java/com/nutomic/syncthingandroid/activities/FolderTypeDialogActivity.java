@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
 
 import java.util.Arrays;
 import java.util.List;

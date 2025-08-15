@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -47,17 +47,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.annimon.stream.function.Consumer;
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.SyncthingApp;
-import com.nutomic.syncthingandroid.fragments.DeviceListFragment;
-import com.nutomic.syncthingandroid.fragments.DrawerFragment;
-import com.nutomic.syncthingandroid.fragments.FolderListFragment;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.service.SyncthingServiceBinder;
-import com.nutomic.syncthingandroid.util.PermissionUtil;
-import com.nutomic.syncthingandroid.util.Util;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.SyncthingApp;
+import com.ajmalshajahan.syncthingandroid.fragments.DeviceListFragment;
+import com.ajmalshajahan.syncthingandroid.fragments.DrawerFragment;
+import com.ajmalshajahan.syncthingandroid.fragments.FolderListFragment;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingServiceBinder;
+import com.ajmalshajahan.syncthingandroid.util.PermissionUtil;
+import com.ajmalshajahan.syncthingandroid.util.Util;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;

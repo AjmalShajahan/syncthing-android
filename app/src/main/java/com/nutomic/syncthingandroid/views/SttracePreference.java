@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.views;
+package com.ajmalshajahan.syncthingandroid.views;
 
 import android.Manifest;
 import android.content.Context;
@@ -10,7 +10,7 @@ import androidx.core.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import com.nutomic.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
 
 import java.util.ArrayList;
 import java.util.Arrays;

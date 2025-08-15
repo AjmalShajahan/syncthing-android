@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.fragments;
+package com.ajmalshajahan.syncthingandroid.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,14 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.activities.FolderActivity;
-import com.nutomic.syncthingandroid.activities.SyncthingActivity;
-import com.nutomic.syncthingandroid.model.Folder;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.RestApi;
-import com.nutomic.syncthingandroid.service.SyncthingService;
-import com.nutomic.syncthingandroid.views.FoldersAdapter;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.activities.FolderActivity;
+import com.ajmalshajahan.syncthingandroid.activities.SyncthingActivity;
+import com.ajmalshajahan.syncthingandroid.model.Folder;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.RestApi;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingService;
+import com.ajmalshajahan.syncthingandroid.views.FoldersAdapter;
 
 import java.util.List;
 import java.util.Timer;

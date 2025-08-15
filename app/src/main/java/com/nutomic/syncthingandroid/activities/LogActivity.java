@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.nutomic.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

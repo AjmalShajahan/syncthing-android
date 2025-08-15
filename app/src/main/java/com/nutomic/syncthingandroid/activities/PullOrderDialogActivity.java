@@ -1,11 +1,11 @@
-package com.nutomic.syncthingandroid.activities;
+package com.ajmalshajahan.syncthingandroid.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import com.nutomic.syncthingandroid.databinding.ActivityPullorderDialogBinding;
+import com.ajmalshajahan.syncthingandroid.databinding.ActivityPullorderDialogBinding;
 import java.util.Arrays;
 import java.util.List;
 

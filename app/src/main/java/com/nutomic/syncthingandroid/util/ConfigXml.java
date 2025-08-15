@@ -1,4 +1,4 @@
-package com.nutomic.syncthingandroid.util;
+package com.ajmalshajahan.syncthingandroid.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,9 +8,9 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.nutomic.syncthingandroid.R;
-import com.nutomic.syncthingandroid.service.Constants;
-import com.nutomic.syncthingandroid.service.SyncthingRunnable;
+import com.ajmalshajahan.syncthingandroid.R;
+import com.ajmalshajahan.syncthingandroid.service.Constants;
+import com.ajmalshajahan.syncthingandroid.service.SyncthingRunnable;
 
 import org.mindrot.jbcrypt.BCrypt;
 import org.w3c.dom.Document;
