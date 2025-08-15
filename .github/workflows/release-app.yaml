@@ -12,13 +12,13 @@ on:
 env:
   # Our build metadata
   BUILD_USER: android-builder
-  BUILD_HOST: github.syncthing.net
+  BUILD_HOST: github.ajmalshajahan.me
 
 jobs:
   release:
     name: Release Build and Publish
     runs-on: ubuntu-latest
-    container: ghcr.io/syncthing/syncthing-android-builder
+    container: ghcr.io/ajmalshajahan/syncthing-android-builder
     steps:
       - uses: actions/checkout@v3
         with:
