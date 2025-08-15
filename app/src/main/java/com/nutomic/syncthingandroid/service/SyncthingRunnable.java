@@ -83,7 +83,7 @@ public class SyncthingRunnable implements Runnable {
         mUseRoot = mPreferences.getBoolean(Constants.PREF_USE_ROOT, false) && Shell.SU.available();
         switch (command) {
             case deviceid ->
-                    mCommand = new String[]{mSyncthingBinary.getPath(), "--home", mContext.getFilesDir().toString(), "--device-id"};
+                    mCommand = new String[]{mSyncthingBinary.getPath(), "device-id", "--home", mContext.getFilesDir().toString()};
             case generate ->
                     mCommand = new String[]{mSyncthingBinary.getPath(), "generate", "--home", mContext.getFilesDir().toString()};
             case main ->
