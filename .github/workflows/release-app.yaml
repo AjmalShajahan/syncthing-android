@@ -18,7 +18,7 @@ jobs:
   release:
     name: Release Build and Publish
     runs-on: ubuntu-latest
-    container: ghcr.io/ajmalshajahan/syncthing-android-builder
+    container: ghcr.io/ajmalshajahan/syncthing-android-builder@sha256:360c97a9037367912b1ab27d633c5bd01c0aba68bea668705a53cfb261bd8fcb
     steps:
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
         with:
