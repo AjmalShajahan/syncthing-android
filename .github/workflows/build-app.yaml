@@ -1,11 +1,13 @@
 name: Build App
 
 on:
+  workflow_dispatch:
   pull_request:
   push:
     branches:
       - main
       - release
+      - dev
 
 env:
   # Our build metadata
