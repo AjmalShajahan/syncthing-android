@@ -24,5 +24,11 @@
     "enabled": true,
     "labels": ["security"]
   },
-  "osvVulnerabilityAlerts": true
+  "osvVulnerabilityAlerts": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["androidx.annotation:annotation"],
+      "allowedVersions": "1.8.1"
+    }
+  ]
 }
