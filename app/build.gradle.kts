@@ -3,30 +3,30 @@ import org.gradle.configurationcache.extensions.capitalized
 plugins {
     id("com.android.application")
     id("com.github.ben-manes.versions")
-    id("com.github.triplet.play") version "3.7.0"
-    id("org.jetbrains.kotlin.android") version "2.2.0"
+    id("com.github.triplet.play") version "3.13.0"
+    id("org.jetbrains.kotlin.android") version "2.4.0"
 }
 
 dependencies {
     implementation("eu.chainfire:libsuperuser:1.1.1")
-    implementation("com.google.android.material:material:1.8.0")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.google.android.material:material:1.14.0")
+    implementation("com.google.code.gson:gson:2.14.0")
     implementation("org.mindrot:jbcrypt:0.4")
-    implementation("com.google.guava:guava:32.1.3-android")
+    implementation("com.google.guava:guava:32.1.3-jre")
     implementation("com.annimon:stream:1.2.2")
     implementation("com.android.volley:volley:1.2.1")
-    implementation("commons-io:commons-io:2.14.0")
+    implementation("commons-io:commons-io:2.22.0")
 
     implementation("com.journeyapps:zxing-android-embedded:4.3.0") {
         isTransitive = false
     }
-    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.google.zxing:core:3.5.4")
 
-    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
-    implementation("com.google.dagger:dagger:2.49")
-    annotationProcessor("com.google.dagger:dagger-compiler:2.49")
-    androidTestImplementation("androidx.test:rules:1.4.0")
-    androidTestImplementation("androidx.annotation:annotation:1.2.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation("com.google.dagger:dagger:2.60")
+    annotationProcessor("com.google.dagger:dagger-compiler:2.60")
+    androidTestImplementation("androidx.test:rules:1.7.0")
+    androidTestImplementation("androidx.annotation:annotation:1.8.1")
 }
 
 android {
