@@ -16,10 +16,12 @@
   ],
   "rollbackPrs": true,
   "assigneesFromCodeOwners": true,
-  "dependencyDashboard": true,
-  "dependencyDashboardAutoclose": false,
-  "dependencyDashboardLabels": ["dependencies"],
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "dependencyDashboard": {
+    "enabled": true,
+    "autoclose": false,
+    "labels": ["dependencies"],
+    "osvVulnerabilitySummary": "all"
+  },
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security"]
