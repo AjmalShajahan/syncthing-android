@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-jammy@sha256:e89e27f0f1436d3458fa2a8d636140dd94c10e23c92cadd9e25244c2b960d3c7
+FROM eclipse-temurin:17-jdk-jammy@sha256:96ac8197b2cbc2bb0f9fbcbf91dbb0015f43b3c76a1cb351892da12e7bb91bed
 
 ENV GO_VERSION=1.24.6
 
